@@ -1,0 +1,86 @@
+$about_text_color: #c0c0c0;
+$button_color: #009759;
+$base_text_color: #ffffff;
+$title_text_color: #a5a5a5;
+
+.dashBord-container {
+  font-family: "Roboto";
+
+  .image-wrapper {
+    .navBar-header {
+      .navBar-right {
+        .base-logo {
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        position: absolute;
+        left: 58px;
+        top: 21px;
+        z-index: 1000;
+        .title {
+          font-size: 12px;
+          font-weight: 400;
+          .sub-title {
+            color: $title_text_color;
+          }
+        }
+      }
+      .navBar-left {
+        position: absolute;
+        z-index: 1000;
+        left: 1106px;
+        top: 16px;
+      }
+    }
+    position: relative;
+    .background-img {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+    .base-img {
+      position: absolute;
+      left: 379.43px;
+      top: 1.14px;
+    }
+
+    .content-wrapper {
+      position: absolute;
+      z-index: 10000;
+      top: 105px;
+      left: 148px;
+      .heading {
+        width: 374px;
+        height: 154px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 72px;
+      }
+      .about-text {
+        width: 484px;
+        height: 53px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $about_text_color;
+      }
+      .register-btn {
+        margin: 1.5rem 0rem;
+
+        & button {
+          padding: 1rem 4.5rem;
+          background: $button_color;
+          color: $base_text_color;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          border: none;
+          font-family: "Roboto";
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
