@@ -1,0 +1,27 @@
+@import url(./_variables.scss);
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--base_color);
+  color: var(--base_text_color);
+  font-family: var(--base_font_family);
+}
+
+ul {
+  padding: 0;
+  & li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--base_text_color);
+  
+}
+
+button {
+    border: none;
+    font-family: var(--base_font_family);
+}

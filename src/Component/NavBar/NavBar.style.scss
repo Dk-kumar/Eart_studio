@@ -1,16 +1,12 @@
-$title_text_color: #A5A5A5;
+@import url(../../Styles/_variables.scss);
 
 .navBar-container {
   .navBar-wrapper {
-    // position: absolute;
-    // z-index: 1000;
     display: flex;
     gap: 1.5rem;
     font-weight: 400;
     font-size: 13px;
     line-height: 14px;
-    // left: 1106px;
-    // top: 16px;
   }
 
   .base-logo {
@@ -27,7 +23,7 @@ $title_text_color: #A5A5A5;
         font-size: 12px;
         font-weight: 400;
         .sub-title {
-            color: $title_text_color;
+            color: var(--title_text_color);
         }
     }
   }

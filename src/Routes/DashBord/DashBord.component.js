@@ -37,20 +37,20 @@ const DashBord = () => {
     return (
       <>
         <div className="image-wrapper">
-          <div className="navBar-header">
-            <div className="navBar-right">{renderLogo()}</div>
-            <div className="navBar-left">
-              <NavBarContainer />
-            </div>
-          </div>
-
           <div className="background-img">
             <img src={DashBord_1} alt="DashBord_1" />
+            <div className="logo-wrapper">{renderLogo()}</div>
+            {renderText()}
           </div>
           <div className="base-img">
             <img src={DashBord_2} alt="DashBord_2" />
+            <div className="navBar-header">
+              <NavBarContainer />
+            </div>
+            <div className="navBar-footer">
+              <NavBarContainer />
+            </div>
           </div>
-          {renderText()}
         </div>
       </>
     );

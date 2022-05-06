@@ -1,49 +1,55 @@
-$about_text_color: #c0c0c0;
-$button_color: #009759;
-$base_text_color: #ffffff;
-$title_text_color: #a5a5a5;
+@import url(../../Styles/_variables.scss);
 
 .dashBord-container {
-  font-family: "Roboto";
+  margin: auto;
+  width: 1440px;
+  height: 100vh;
 
   .image-wrapper {
-    .navBar-header {
-      .navBar-right {
+    position: relative;
+    top: 10%;
+
+    .background-img {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+
+      .logo-wrapper {
+        position: inherit;
+        left: 58px;
+        top: 21px;
+        z-index: 1000;
         .base-logo {
           flex-direction: column;
           display: flex;
           justify-content: center;
           align-items: center;
         }
-        position: absolute;
-        left: 58px;
-        top: 21px;
-        z-index: 1000;
         .title {
           font-size: 12px;
           font-weight: 400;
           .sub-title {
-            color: $title_text_color;
+            color: var(--title_text_color);
           }
         }
       }
-      .navBar-left {
-        position: absolute;
-        z-index: 1000;
-        left: 1106px;
-        top: 16px;
-      }
     }
-    position: relative;
-    .background-img {
-      position: absolute;
-      top: 0;
-      z-index: 1;
-    }
+
     .base-img {
       position: absolute;
       left: 379.43px;
       top: 1.14px;
+      .navBar-header {
+        position: inherit;
+        z-index: 1000;
+        right: 48px;
+        top: 16px;
+      }
+      .navBar-footer {
+        position: inherit;
+        left: 18%;
+        padding: 2rem 0rem;
+      }
     }
 
     .content-wrapper {
@@ -64,20 +70,18 @@ $title_text_color: #a5a5a5;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: $about_text_color;
+        color: var(--about_text_color);
       }
       .register-btn {
         margin: 1.5rem 0rem;
 
         & button {
           padding: 1rem 4.5rem;
-          background: $button_color;
-          color: $base_text_color;
+          background: var(--button_color);
+          color: var(--base_text_color);
           font-weight: 400;
           font-size: 18px;
           line-height: 21px;
-          border: none;
-          font-family: "Roboto";
           border-radius: 4px;
         }
       }

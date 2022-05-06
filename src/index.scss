@@ -1,23 +1,2 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
-
-$base_color: #070707;
-$base_text_color: #ffffff;
-
-body {
-  background: $base_color;
-  color: $base_text_color;
-}
-
-ul {
-  padding: 0;
-
-  & li {
-    list-style: none;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: $base_text_color;
-  font-family: "Roboto";
-}
+@import url(./Styles/_base.scss);
+@import url(./Styles/_fonts.scss);
