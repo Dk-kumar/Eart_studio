@@ -1,22 +1,9 @@
-import DashBord_1 from "../../Shared/Images/DashBord/DashBord_1.png";
-import DashBord_2 from "../../Shared/Images/DashBord/DashBord_2.png";
+import dashBord from "../../Shared/Images/DashBord/dashBord.png";
 import NavBarContainer from "../../Component/NavBar/NavBar.container";
 import { Values } from "../../Constant";
-import { baseLogo } from "../../Shared/Icons";
 import "./DashBord.style.scss";
 
 const DashBord = () => {
-  const renderLogo = () => {
-    return (
-      <div className="base-logo">
-        <span className="logo">{baseLogo()}</span>
-        <span className="title">
-          ART <span className="sub-title">STUDIOS</span>
-        </span>
-      </div>
-    );
-  };
-
   const renderText = () => {
     return (
       <div className="content-wrapper">
@@ -37,21 +24,12 @@ const DashBord = () => {
     return (
       <>
         <div className="image-wrapper">
-          <div className="background-img">
-            <img src={DashBord_1} alt="DashBord_1" />
-            <div className="logo-wrapper">{renderLogo()}</div>
-            {renderText()}
+          <div>
+            <NavBarContainer />
           </div>
-          <div className="base-img">
-            <img src={DashBord_2} alt="DashBord_2" />
-            <div className="navBar-header">
-              <NavBarContainer />
-            </div>
-            <div className="navBar-footer">
-              <NavBarContainer />
-            </div>
-          </div>
+          <img src={dashBord} alt="dashBord.png" />
         </div>
+        {renderText()}
       </>
     );
   };

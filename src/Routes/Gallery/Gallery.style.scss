@@ -1,0 +1,41 @@
+@import url(../../Styles/_variables.scss);
+
+.gallery-container {
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    .heading {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .menu-wrapper {
+      display: flex;
+      gap: 2rem;
+      padding-left: 1.5rem;
+      .menu-list {
+        padding: 4px 16px;
+      }
+    }
+  }
+  .image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 2rem;
+
+    & img {
+      width: 280px;
+      height: auto;
+    }
+  }
+  .active {
+    background: var(--menu_background_color);
+    border-radius: 14px;
+  }
+}

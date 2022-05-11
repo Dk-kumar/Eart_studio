@@ -1,6 +1,9 @@
 @import url(../../Styles/_variables.scss);
 
 .navBar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
   .navBar-wrapper {
     display: flex;
     gap: 1.5rem;
@@ -10,10 +13,6 @@
   }
 
   .base-logo {
-    position: absolute;
-    left: 58px;
-    top: 21px;
-    z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: center;

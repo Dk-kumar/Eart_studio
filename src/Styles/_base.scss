@@ -12,6 +12,7 @@ ul {
   padding: 0;
   & li {
     list-style: none;
+    cursor: pointer;
   }
 }
 
@@ -24,4 +25,5 @@ a {
 button {
     border: none;
     font-family: var(--base_font_family);
+    cursor: pointer;
 }
