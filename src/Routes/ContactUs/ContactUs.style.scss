@@ -1,0 +1,32 @@
+.contactUS-container {
+  .form-wrapper {
+    position: absolute;
+    width: 590px;
+    height: 600px;
+    left: 129px;
+    top: 167px;
+    background: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .submit-btn {
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+      & button {
+        width: 447px;
+        height: 52px;
+        border-radius: 4px;
+        background-color: var(--button_color);
+        color: var(--base_text_color);
+        font-family: var(--base_font_family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+}
